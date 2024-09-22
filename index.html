@@ -2,12 +2,20 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crician Domina</title>
+  <meta name="viewport" content="width=device-width, initial-scale
+  <title>Crician domina</title>
   <link rel="stylesheet" href="./estilo.css">
 </head>
-<audio autoplay volume="0.1" hidden src="https://j.top4top.io/m_1772xeikf9.mp3"></audio>
 <body>
-
+    <div class="msg">
+      <h2 class="text">Click no botão <span>😶</span></h2>
+    </div>
+    <audio id="audi" controls autoplay loop>
+      <source src="./music.mp3" type="audio/mp3">
+    </audio>
+<script>
+const audi = document.getElementById('audi');
+audi.volume = 100;
+</script>
 </body>
 </html>
