@@ -7,59 +7,65 @@
   <title>Calculadora</title>
   <style>
     body {
-      background-image: url(https://i.imgur.com/eStJmVk.jpeg);
-      background-repeat: no-repeat;
+      height: 79.3vh;
+     background-image: url(https://i.imgur.com/9XlZKp3.jpeg) ; 
       background-size: cover;
+      background-repeat: no-repeat;
       font-family: Arial, sans-serif;
-      background-color: #141414;
     }
     
+    
+    h2 {  
+      color: #fff;
+      margin-left: -5px;
+      margin-top: -3px;
+    }
     .calculadora {
-      width: 300px;
-      height: 350px;
-      margin: 40px auto;
+      width: 260px;
+      height: 450px;
+      margin: 20px auto;
       padding: 20px;
-      margin-top: 150px;
-      background-color: transparent;
+      margin-top: 101px;
       border: 3px solid #fff;
       font-size: 24px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 30px;
     }
     
     .display {
-      color: #fff;
+      color: #fff ;
       width: 100%;
       height: 40px;
       padding: 10px;
       border: none;
       margin-left: -9px;
+      margin-top: -20px;
       margin-bottom: 30px;
-      border-radius: 5px;
+      border-radius: 10px;
       font-size: 30px;
       text-align: right;
+      z-index:1;
     }
     
     .botao {
-      width: 60px;
-      height: 45px;
+      width: 50px;
+      height: 50px;
       margin: 5px;
       padding: 10px;
       border: none;
-      border-radius: 5px;
-      background-color: #4CAF50;
+      border-radius: 18px;
+      background-color: rgb(130,130,130,0.5);  
       color: #fff;
       cursor: pointer;
     }
     
-    .botao:hover {
-      background-color: #3e8e41;
-    }
+   }
+}
   </style>
 </head>
 <body>
-  <div class="calculadora">
+  <div class="calculadora"><h2>CALCULADORA</h2>
     <input type="text" id="display" class="display" disabled>
+  
     <div>
       <button class="botao" onclick="adicionarNumero('7')">7</button>
       <button class="botao" onclick="adicionarNumero('8')">8</button>
@@ -88,7 +94,7 @@
       <button class="botao" onclick="limpar()">C</button>
     </div>
   </div>
-  
+
   <script>
     let display = document.getElementById('display');
     let expressao = '';
